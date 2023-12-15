@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/runeTranslate.js"></script>
     <title>Text to Runes Converter</title>
 </head>
 <body>
-
-    <h1>Text to Runes Converter</h1>
-
-    <label for="inputText">Enter your text:</label>
-    <textarea id="inputText" rows="4" cols="50"></textarea>
-
-    <button onclick="convertToRunes()">Convert to Runes</button>
-
-    <h2>Translated Runes:</h2>
-    <div id="outputRunes"></div>
-
-    <script src="js/runeTranslate.js"></script>
+    <div class="container">
+        <h1>Text to Runes Converter</h1>
+        <label for="inputText">Enter your text:</label>
+        <textarea id="inputText" rows="4" cols="50" class="input-text"></textarea>
+        <button id="convertBtn" class="convert-btn">Convert to Runes</button>
+        <h2>Translated Runes:</h2>
+        <p>Enjoy your runes:</p>
+        <div id="outputRunes" class="output-runes"></div>
+    </div>
 </body>
 </html>

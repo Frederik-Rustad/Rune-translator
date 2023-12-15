@@ -8,7 +8,13 @@ function convertToRunes() {
   // Display the translated runes in the output area
   document.getElementById("outputRunes").innerText = translatedRunes;
 }
+document.getElementById("convertBtn").addEventListener("click", convertToRunes);
 
+document.getElementById("inputText").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+      convertToRunes();
+  }
+});
 // Replace this function with your actual translation logic
 function translateToRunes(text) {
   // Define a mapping of modern letters to Elder Futhark runes
